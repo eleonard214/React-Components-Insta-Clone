@@ -15,6 +15,9 @@ const SearchBar = (props) => {
         <input
           type="text"
           placeholder="Search"
+          onChange={(item)=>{
+            props.setSearch(item.target.value)}
+          }
         />
       </form>
       <div className="social-wrapper">
